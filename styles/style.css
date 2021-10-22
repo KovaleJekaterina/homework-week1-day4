@@ -1,0 +1,40 @@
+* {
+    font-family: Arial;
+}
+
+h1, h2 {
+    width: 200px;
+    text-align: left;
+
+}
+
+.green {
+    color: green;
+}
+
+.right {
+    text-align: right;
+    text-indent: 30px;
+}
+
+.red {
+    background-color: red;
+    width: 100px;
+    height: 80px;
+
+}
+
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+}
+
+fieldset {
+    width: 100px;
+}
+
+.resize {
+    resize: none;
+}
+

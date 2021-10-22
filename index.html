@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>day-4</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<section class="right">
+
+    <h1>HTML</h1>
+    <p class="green">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов для просмотра веб-страниц в браузере. Веб-браузеры получают HTML документ от сервера по протоколам HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в интерфейс, который будет отображаться на экране монитора.
+
+    <p> Элементы HTML являются строительными блоками HTML страниц. С помощью HTML разные конструкции, изображения и другие объекты такие как интеракивная веб-формы могут быть встроены в отображаемую страницу. HTML предоставляет средства для создания заголовков, абзацев, списков, ссылок, цитат и других элементов. Элементы HTML выделяются тегами, записанными с использованием угловых скобок. Такие теги, как и, напрямую вводят контент на страницу. Другие теги, такие как, окружают и оформляют текст внутри себя и могут включать другие теги в качестве подэлементов. Браузеры не отображают HTML-теги, но используют их для интерпретации содержимого страницы.</p>
+
+    <p> Язык XHTML является более строгим вариантом HTML, он следует синтаксису XML и является приложением языка XML в области разметки гипертекста.
+
+        В HTML можно встроить программый код на языке программирования JavaScript, для управления поведением и содержанием веб-страниц. Также включение CSS в HTML описывает внешний вид и макет страницы.</p>
+
+
+    <h2>Общее представление</h2>
+        <p>Язык гипертекстовой разметки HTML был разработан британским учёным Тимом Бернерсом-Ли приблизительно в 1986—1991 годах в стенах ЦЕРНа в Женеве в Швейцарии[3]. HTML создавался как язык для обмена научной и технической документацией, пригодный для использования людьми, не являющимися специалистами в области вёрстки. HTML успешно справлялся с проблемой сложности SGML путём определения небольшого набора структурных и семантических элементов — дескрипторов. Дескрипторы также часто называют «тегами». С помощью HTML можно легко создать относительно простой, но красиво оформленный документ. Помимо упрощения структуры документа, в HTML внесена поддержка гипертекста. Мультимедийные возможности были добавлены позже.</p>
+</section>
+
+<hr/>
+
+        <div class="red">
+            <h2>Блок1</h2>
+                <div class="blue">
+                    <h2>Блок2</h2>
+                </div>
+        </div>
+    <hr/>
+<fieldset>
+    <div>
+        <h3>Пол</h3>
+        <div>
+            <input tabindex="4" checked type="radio" name="gender" value="male">Мужской
+        </div>
+        <div>
+            <input tabindex="4" type="radio" name="gender" value="female" disabled>Женский
+        </div>
+        </div>
+</fieldset>
+    <hr/>
+    <fieldset>
+        <div>
+            <h3>Прикрепить фото</h3>
+            <input tabindex="8" type="file" name="userfoto">
+            <input tabindex="8" type="file" name="userfoto" disabled>
+        </div>
+    </fieldset>
+    <hr/>
+    <fieldset>
+        <div>
+            <h3>Пароль</h3>
+            <input placeholder="Пароль" tabindex="2" name="userpas" type="password">
+            <input placeholder="Пароль" tabindex="2" name="userpas" type="password" disabled>
+        </div>
+
+    </fieldset>
+    <hr/>
+    <input type="image" id="image" alt="Login"
+           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1D07TzQkGLrMWn9je6vF_3udKttdnB9tCI3s2cenBiyRHS_bgtV0uMDq_Ff3oGhXVnFY&usqp=CAU">
+    <hr/>
+    <fieldset>
+        <div>
+            <h3>Дополнительная информация</h3>
+            <textarea name="text"></textarea>
+            <textarea name="text" disabled></textarea>
+        </div>
+    </fieldset>
+    <hr/>
+ <form>
+    <fieldset>
+        <legend>
+            <h3 tabindex="2">Э-майл</h3></legend>
+            <input placeholder="Э-майл" tabindex="3" name="email" type="tel">
+
+            <input placeholder="Э-майл" tabindex="3" name="email" type="tel" disabled>
+
+           <legend> <h3 tabindex="1">Пароль</h3></legend>
+            <input placeholder="Пароль" tabindex="2" name="userpas" type="password">
+
+
+    </fieldset>
+</form>
+    <hr/>
+<div>
+    <input type="date" id="start" name="trip-start"
+           value="2021-07-22">
+</div>
+
+<hr/>
+    <div>
+        <button tabindex="11" type="submit">Отправить</button>
+
+    </div>
+    <form>
+        <input type="button" value="Нажми меня">
+    </form>
+<hr/>
+    <fieldset>
+    <div>
+        <h3>Любимый цвет</h3>
+        <select tabindex="10" name="color">
+            <option value="red">Красный</option>
+            <option value="green">Зеленый</option>
+            <option selected value="blue">Синий</option>
+        </select>
+
+    </div>
+    </fieldset>
+<hr/>
+
+<fieldset>
+    <div>
+        <h3>Имущество</h3>
+        <div>
+            <input tabindex="5" checked type="checkbox" name="bike" value="yes">Велик
+        </div>
+        <div>
+            <input tabindex="6" type="checkbox" name="car" value="yes">Машина
+        </div>
+        <div>
+            <input tabindex="7" disabled type="checkbox" name="house" value="yes">Квартира
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <form action="textarea1.php" method="post">
+        <h3><b>Введите ваш отзыв:</b></h3>
+        <p><textarea class="resize" rows="3" cols="100" name="text" ></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+</fieldset>
+
+<hr/>
+
+<fieldset>
+    <form action="textarea1.php" method="post">
+        <h3><b>Введите ваш отзыв:</b></h3>
+        <p><textarea rows="3" cols="100" name="text" ></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+</fieldset>
+
+<hr/>
+
+<fieldset>
+
+</fieldset>
+
+
+
+</body>
+</html>
